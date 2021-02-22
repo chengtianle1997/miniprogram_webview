@@ -8,3 +8,34 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+.page-section{
+  width: 100%;
+  margin-bottom: 30px;
+}
+.page-section_center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-section:last-child{
+  margin-bottom: 0;
+}
+.page-section-gap{
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+.page-section-title{
+  /* font-size: 14px; */
+  font-size: 14px;
+  color: var(--weui-FG-1);
+  /* margin-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px; */
+  margin-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.page-section-gap .page-section-title{
+  padding-left: 0;
+  padding-right: 0;
+}

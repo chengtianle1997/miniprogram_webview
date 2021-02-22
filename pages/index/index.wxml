@@ -9,6 +9,20 @@
   </view>
   <view class="usermotto">
     <!-- <text class="user-motto">{{motto}}</text> -->
+    <view class="page-section">
+      <view class="weui-cells__title">这里键入域名或ip</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input class="weui-input" bindinput="inputIp" auto-focus placeholder="输入域名或ip"/>
+        </view>
+      </view>
+    </view>
   </view>
+  <!-- <view class="usermotto">
+    <view class="page-section">
+          <checkbox value="cb"/>使用htttps
+    </view>
+  </view> -->
+  <view class="usermotto"></view>
   <button type="primary" bindtap="navigateTo">跳转页面</button>
 </view>

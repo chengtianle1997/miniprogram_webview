@@ -9,7 +9,8 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     // 这里修改phpStudy终端机的ip地址
-    navigateUrl: 'http://192.168.0.116/'
+    navigateUrl: 'http://192.168.0.116/',
+    ipaddr: ''
   },
   // 事件处理函数
   bindViewTap() {
@@ -123,11 +124,21 @@ Page({
       hasUserInfo: true
     })
   },
+
+  // 跳转页面
   navigateTo(e){
     console.log("跳转到测试页面")
+    if(this.data.ipaddr){
+      this.data.navigateUrl = "http://" + this.data.ipaddr
+    }
     wx.navigateTo({
       url: '/pages/mapnav/mapnav?mapNav=' + this.data.navigateUrl,
     })
+  },
+  // 输入框获取ip
+  inputIp(e){
+    this.setData({
+      ipaddr: e.detail.value
+    })
   }
-
 })
