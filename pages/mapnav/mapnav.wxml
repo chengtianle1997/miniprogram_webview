@@ -1,0 +1,3 @@
+<!--pages/mapnav/mapnav.wxml-->
+<!-- <text>pages/mapnav/mapnav.wxml</text> -->
+<web-view src="{{mapNav}}"></web-view>
